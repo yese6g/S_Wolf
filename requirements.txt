@@ -1,0 +1,25 @@
+# SilverWolf 后端依赖（v0.4.0 锁定版本，全部本地安装，无运行时联网下载）
+fastapi==0.141.1
+uvicorn[standard]==0.52.1
+openai==2.52.0
+python-dotenv==1.2.2
+pydantic==2.13.4
+python-multipart==0.0.32
+
+# RAG 向量存储
+chromadb==1.5.9
+
+# 可选：高质量本地 embedding（sentence-transformers）
+# 不安装也能运行 —— 将自动回退到内置离线 hash embedding（零下载）
+sentence-transformers==6.0.0
+
+# 文档解析
+pypdf==6.16.1
+python-docx==1.2.0
+
+# 网页解析（v2.0.3）
+# beautifulsoup4：解析搜索引擎结果页（免 Key 爬虫兜底）与网页正文抽取
+beautifulsoup4==4.15.0
+
+# 测试（运行 tests/ 冒烟）
+pytest==8.4.1

@@ -1,0 +1,33 @@
+# 环境与密钥
+.env
+.env.local
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+.trae/
+
+# 运行时数据（可重建）
+*.db
+chroma_db/
+knowledge_bases/*.json
+models/
+data/
+
+# 日志
+*.log
+
+# 测试
+.pytest_cache/
+
+# 版权素材（角色图/背景图，自行替换，不入库）
+static/background.jpg
+static/avatar.jpg
+
+# 项目无关的临时文件（简历/文档/脚本等，用完即删）
+tmp/
