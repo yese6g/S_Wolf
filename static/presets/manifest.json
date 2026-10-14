@@ -1,0 +1,47 @@
+{
+  "backgrounds": [
+    {
+      "id": "sky-game",
+      "name": "云端开局",
+      "file": "sky-game.png",
+      "url": "/static/presets/sky-game.png"
+    },
+    {
+      "id": "crystal-sky",
+      "name": "晴空晶庭",
+      "file": "crystal-sky.png",
+      "url": "/static/presets/crystal-sky.png"
+    }
+  ],
+  "bot": [
+    {
+      "id": "silver-hacker",
+      "name": "银白黑客",
+      "file": "silver-hacker.png",
+      "url": "/static/presets/silver-hacker.png"
+    },
+    {
+      "id": "silver-gamer",
+      "name": "眨眼玩家",
+      "file": "silver-gamer.png",
+      "url": "/static/presets/silver-gamer.png"
+    }
+  ],
+  "user": [
+    {
+      "id": "sky-teammate",
+      "name": "星空队友",
+      "file": "sky-teammate.png",
+      "url": "/static/presets/sky-teammate.png"
+    },
+    {
+      "id": "crystal-buddy",
+      "name": "晶核搭档",
+      "file": "crystal-buddy.png",
+      "url": "/static/presets/crystal-buddy.png"
+    }
+  ],
+  "generated_with": "OpenAI built-in imagegen",
+  "date": "2026-10-11",
+  "note": "原创生成设计；非游戏官方素材。参考仅用于明亮蓝紫色彩与黑客游戏氛围。"
+}
