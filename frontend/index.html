@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Wolf - 银狼</title>
+    <link rel="stylesheet" href="/frontend/src/style.css?v=3.7.0-ui4">
+    <link rel="stylesheet" href="/frontend/vendor/xterm/xterm.css?v=3.7.0-ui4">
+    <!-- 标签页图标 = 像素狼头（与 icons.js 的 wolf 图标同一份路径，颜色写死） -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M1 1h2v1h-2zM13 1h2v1h-2zM1 2h3v1h-3zM12 2h3v1h-3zM1 3h4v1h-4zM11 3h4v1h-4zM1 4h5v1h-5zM10 4h5v1h-5zM1 5h14v1h-14zM1 6h3v1h-3zM6 6h4v1h-4zM12 6h3v1h-3zM1 7h3v1h-3zM6 7h4v1h-4zM12 7h3v1h-3zM1 8h14v1h-14zM1 9h6v1h-6zM9 9h6v1h-6zM1 10h6v1h-6zM9 10h6v1h-6zM1 11h5v1h-5zM7 11h2v1h-2zM10 11h5v1h-5zM2 12h12v1h-12zM3 13h10v1h-10z' fill='%23C9C3E8'/><path d='M4 6h2v1h-2zM10 6h2v1h-2zM4 7h2v1h-2zM10 7h2v1h-2z' fill='%233ED8F0'/></svg>">
+</head>
+<body>
+    <div id="app"></div>
+
+    <!-- ══ 前端依赖均为本地文件，无任何 CDN / 外网请求 ══ -->
+    <!-- Vue 3 运行时（vue.global.prod.js 为完整版，含模板编译器） -->
+    <script src="/frontend/vendor/vue.global.prod.js?v=3.7.0-ui4"></script>
+    <script>
+        // 若 Vue 3 运行时未就绪，给出友好提示并跳过业务脚本
+        if (typeof Vue === 'undefined') {
+            document.getElementById('app').innerHTML =
+                '<div style="padding:40px;min-height:100vh;font-family:Segoe UI,sans-serif;color:#E8DFF5;background:#070413;line-height:1.9;">' +
+                '<h2 style="color:#A79BFF;">缺少 Vue 3 运行时</h2>' +
+                '<p>前端依赖尚未就绪。请运行项目根目录的 <code>install.bat</code>（Windows）或 <code>install.sh</code>（Linux/macOS）自动下载；' +
+                '或手动下载 <code>vue.global.prod.js</code> 放入 <code>frontend/vendor/</code>。</p>' +
+                '</div>';
+            window.__NO_VUE__ = true;
+        }
+    </script>
+    <!-- 业务脚本：图标系统 → API 层 → 状态层 → 组件层（icons.js 提供 sw-icon 组件，须在 stores/app 之前） -->
+    <script src="/frontend/src/icons.js?v=3.7.0-ui4"></script>
+    <script src="/frontend/src/api.js?v=3.7.0-ui4"></script>
+    <script src="/frontend/src/stores.js?v=3.7.0-ui4"></script>
+    <script src="/frontend/src/markdown.js?v=3.7.0-ui4"></script>
+    <script src="/frontend/vendor/xterm/xterm.js?v=3.7.0-ui4"></script>
+    <script src="/frontend/src/app.js?v=3.7.0-ui4"></script>
+</body>
+</html>
