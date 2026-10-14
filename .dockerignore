@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.git/
+.idea/
+*.db
+chroma_db/
+knowledge_bases/
+models/
+data/
+tmp/
+.trae/
+.chrome-test*/
+static/background.jpg
+static/avatar.jpg
